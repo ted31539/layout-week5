@@ -1,0 +1,323 @@
+---
+title: Boostrap Index
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="wrap">
+  <!-- header -->
+  <div class="header pt-7 pb-7">
+    <div class="container d-flex justify-content-between">
+      <div class="d-flex">
+        <h1 class="h1 me-11">Assignment</h1>
+        <!-- All Courses下拉選單 -->
+        <div class="dropdown">
+          <a
+            class="btn dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            All Courses
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Chapter Assignment 2</a></li>
+            <li><a class="dropdown-item" href="#">Chapter Assignment 1</a></li>
+            <li><a class="dropdown-item" href="#">Final Assignment</a></li>
+            <li><a class="dropdown-item" href="#">Final Assignment</a></li>
+          </ul>
+        </div>
+        <!-- All Courses下拉選單 end-->
+      </div>
+      <!-- header icon -->
+      <ul class="icon d-flex">
+        <li class="d-flex align-items-center me-5">
+          <a href=""><span class="material-icons">search</span></a>
+        </li>
+        <li class="d-flex align-items-center">
+          <a href=""
+            ><span class="material-icons">notifications_active</span></a
+          >
+        </li>
+      </ul>
+      <!-- header icon end-->
+    </div>
+  </div>
+  <!-- header end-->
+  <!-- main -->
+  <div class="main">
+    <div class="container d-flex">
+      <!-- 課程list區塊 -->
+      <div role="tabpanel">
+        <!-- List group -->
+        <!-- All Courses下拉選單 -->
+        <div class="dropdown">
+          <a class="btn dropdown-toggle fw-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+            All(4)
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">Chapter Assignment 2</a></li>
+            <li><a class="dropdown-item" href="#">Chapter Assignment 1</a></li>
+            <li><a class="dropdown-item" href="#">Final Assignment</a></li>
+            <li><a class="dropdown-item" href="#">Final Assignment</a></li>
+          </ul>
+        </div>
+        <!-- All Courses下拉選單 end-->
+         <!-- 課程list -->
+        <div class="list-group me-3" id="myList" role="tablist">
+          <!-- 選單一 -->
+          <button type="button" class="list-group-item list-group-item-action active d-flex justify-content-between" data-bs-toggle="list" href="#list-question1" role="tab" aria-current="true">
+            <div>
+              <h3 class="h3 list-title">Chapter Assignment 2</h3>
+              <p class="list-content">Please check this file…</p>
+            </div>
+            <div>
+              <p class="list-time">4 hrs ago</p>
+              <p class="list-profile">Emily Wang</p>
+            </div>
+          </button>
+          <!-- 選單二 -->
+          <button
+            type="button" class="list-group-item list-group-item-action d-flex justify-content-between" data-bs-toggle="list" href="#list-profile" role="tab" aria-current="true">
+            <div>
+              <h3 class="h3 list-title">Chapter Assignment 1</h3>
+              <p class="list-content">My Homework</p>
+            </div>
+            <div>
+              <p class="list-time">12 hrs ago</p>
+              <p class="list-profile">David Xu</p>
+            </div>
+          </button>
+          <!-- 選單三 -->
+          <button type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+            <div>
+              <h3 class="list-title h3">Final Assignment</h3>
+              <p class="list-content">Have a problem with this…</p>
+            </div>
+            <div>
+              <p class="list-time">18 hrs ago</p>
+              <p class="list-profile">Tony Wei</p>
+            </div>
+          </button>
+          <!-- 選單四 -->
+          <button
+            type="button" class="list-group-item list-group-item-action d-flex justify-content-between">
+            <div>
+              <h3 class="h3 list-title">Final Assignment</h3>
+              <p class="list-content">Did I do it right?</p>
+            </div>
+            <div>
+              <p class="list-time">19 hrs ago</p>
+              <p class="list-profile">Christina Lin</p>
+            </div>
+          </button>
+        </div>
+      </div>
+      <!-- List group end-->
+
+      <!-- Tab panes -->
+      <!-- 課程問題、回覆 card區塊 -->
+      <div class="tab-content" id="nav-tabContent">
+        <!-- 留言數 -->
+        <div class="message-number text-end">
+          <p class="mb-2">2 comments</p>
+        </div>
+        <!-- 留言數end -->
+        <!-- 第一張card 問題與回答 -->
+        <div class="tab-pane fade show active" id="list-question1" role="tabpanel"
+        ria-labelledby="list-question">          
+          <div class="card mb-3">
+            <!-- card header -->
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <div>
+                <p class="card-header-title">Chapter Assignment 2 / HTML&CSS</p>
+                <p class="card-header-content fw-bold">
+                  Please check this file for me, thanks!
+                </p>
+              </div>
+              <a href=""><span class="material-icons">more_vert</span></a>
+            </div>
+            <!-- card header end-->
+            <!--card-body -->
+            <div class="card-body">              
+              <!-- 課程問題question -->
+              <div class="question mb-3">
+                <div class="d-flex flex-wrap">
+                  <!-- 人物資訊profile -->
+                  <div class="profile d-flex mb-3">
+                    <!-- 大頭貼 -->
+                    <div class="profile-img flex-shrink-0 me-2">
+                      <img
+                        class="rounded-circle"
+                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true"
+                        alt="emilywang"
+                      />
+                    </div>
+                    <!-- 姓名+時間 -->
+                    <div class="profile-body flex-grow-1">
+                      <p class="profile-text m-0">
+                        Emily Wang<br />
+                        <span class="text-secondary"
+                          >10:38 AM (4 hours ago)</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 人物資訊profile end-->
+                  <!-- card-content -->
+                  <div class="card-body-content flex-grow-1 ms-11 pb-3">
+                    <p class="mb-3">
+                      Hi Teacher, the attached file is my homework of chapter 2.
+                      And here comes a question: Why in the following code the
+                      height of the
+                      <code class="text-success bg-light px-1 rounded-1"
+                        >div</code
+                      >
+                      is bigger than the height of the
+                      <code class="text-success bg-light px-1 rounded-1"
+                        >img</code
+                      >
+                      ? There is a gap below the image, but it doesn’t seems to
+                      be a padding/margin. What is the gap or extra space below
+                      image?
+                    </p>
+                    <a
+                      href="#"
+                      class="btn btn-light border"
+                      download="HW-2-David.zip"
+                      >HW-2-David.zip</a
+                    >
+                  </div>
+                  <!-- card-content end-->
+                </div>
+              </div>
+              <!-- question end-->
+              <!-- 課程回答answer -->
+              <div class="answer">                
+                <!-- collapse editor -->
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <div id="editor">Reply an answer…</div>
+                    <div class="buttons-response d-flex justify-content-end">
+                      <button class="btn-cancel btn btn-outline-success me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="true" aria-controls="collapseExample">
+                        Cancel
+                      </button>
+                      <button class="btn-reply btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                        Reply
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- collapse editor end -->
+                <div class="d-flex flex-wrap justify-content-between">
+                  
+                  <!-- 人物資訊profile -->
+                  <div class="profile d-flex mb-3">
+                    <!-- 大頭貼 -->
+                    <div class="profile-img flex-shrink-0 me-2">
+                      <img
+                        class="rounded-circle"
+                        src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true"
+                        alt="andychen"
+                      />
+                    </div>
+                    <!-- 姓名+時間 -->
+                    <div class="profile-body flex-grow-1">
+                      <p class="profile-text m-0">
+                        Andy Chen (You)<br />
+                        <span class="text-secondary"
+                          >13:24 AM (1 hours ago)</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                  <!-- 人物資訊profile end-->
+                  <!--card icon -->
+                  <ul class="icon d-flex align-items-start">
+                    <li class="d-flex align-items-center me-5">
+                      <a href=""
+                        ><span class="material-icons"> grade </span>
+                      </a>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <a href=""><span class="material-icons"> edit </span></a>
+                    </li>
+                  </ul>
+                  <!--card icon end-->
+                  <!-- card-content -->
+                  <div class="card-body-content flex-grow-1 ms-11 pb-3">
+                    <p class="mb-3">
+                      Hi David, by default, an image is rendered inline, like a
+                      letter so it sits on the same line that a, b, c and d sit
+                      on. There is space below that line for the descenders you
+                      find on letters like g, j, p and q.
+                      <br />
+                      <br />
+                      You can:
+                      <br />
+                      <br />
+                      　 • adjust the
+                      <code class="text-success bg-light px-1 rounded-1"
+                        >vertical-align</code
+                      >
+                      of the image to position it elsewhere (e.g. the middle )
+                      or <br />
+                      　 • change the
+                      <code class="text-success bg-light px-1 rounded-1"
+                        >display</code
+                      >
+                      so it isn’t inline.
+                    </p>
+                    <a href="#" class="btn btn-light border" download="HW-2-David.zip">HW-2-David.zip</a>
+                  </div>
+                  <!-- card-content end-->
+                </div>
+              </div>
+              <!-- answer end -->              
+            </div>
+            <!--card-body end-->
+          </div>
+        </div>
+        <!-- 第二張card 問題與回答 -->
+        <div
+          class="tab-pane fade"
+          id="list-profile"
+          role="tabpanel"
+          aria-labelledby="list-profile-list"
+        >
+          ...2
+        </div>
+
+        <!-- card 按鈕 -->
+        <div class="card-nav d-flex justify-content-between align-items-center">
+          <div class="icon">
+            <a href=""><span class="material-icons-outlined me-5">chevron_left</span></a>
+            <a href=""><span class="material-icons-outlined">chevron_right</span></a>
+          </div>
+          <div class="buttons-response">
+            <button class="btn-mark-read btn btn-outline-success me-3" type="button" data-bs-toggle="collapse"  aria-controls="collapseExample">
+              Mark as read
+            </button>
+            <button class="btn-reply btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Reply
+            </button>
+          </div>
+        <!-- card 按鈕 end -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- CKEditor 5套件 -->
+  <script src="https://cdn.ckeditor.com/ckeditor5/29.1.0/classic/ckeditor.js"></script>
+  <script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ) )
+        .catch( error => {
+            console.error( error );
+        } );
+</script>
+  
