@@ -1,10 +1,69 @@
----
-title: Boostrap Index
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boostrap Index</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/style/bootstrap.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">   
+    <link rel="stylesheet" href="./assets/style/all.css">
+  </head>
+
+  <body>
+    <!-- 側邊欄 -->
+    <aside class="aside bg-light pt-7 pb-7 d-flex flex-column justify-content-between">
+      <!-- logo圖片+nav選項 -->
+      <!-- logo圖片 -->
+      <div class="nav-bar">
+        <div class="logo mb-7 ps-7">
+          <img src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/2b326fe971cd296bd54667a9b4a63c4b0f19fab3/week5/logo-ANSWER.svg" alt="ANSWER">
+        </div>
+        <!-- nav選項 -->
+        <ul class="nav flex-column">
+          <li class="nav-item mb-5 ps-7">
+            <a class="nav-link link-dark " aria-current="page" href="#"><span class="material-icons me-3">insert_chart</span>Dashboard</a>
+          </li>
+          <li class="nav-item mb-5 ps-7">
+            <a class="nav-link link-dark" href="#"><span class="material-icons me-3">question_answer</span>Question</a>
+          </li>
+          <!-- active -->
+          <li class="nav-item mb-5 ps-7">
+            <a class="nav-link active alert-link" href="#"><span class="material-icons me-3">assignment</span>Assignment</a>
+          </li>
+          <!-- active -->
+          <li class="nav-item mb-5 ps-7">
+            <a class="nav-link link-dark" href="#"><span class="material-icons me-3">video_library</span>Course</a>
+          </li>
+          <li class="nav-item mb-5 ps-7">
+            <a class="nav-link link-dark" href="#"><span class="material-icons me-3">people</span>Admin</a>
+          </li>
+          <li class="nav-item ps-7">
+            <a class="nav-link link-dark" href="#"><span class="material-icons me-3">settings</span>Settings</a>
+          </li>        
+        </ul>
+      </div>
+      <!-- logo圖片+nav選項 end-->
+      <!-- 人物資訊profile -->
+      <div class="profile d-flex ms-7">
+        <!-- 大頭貼 -->
+        <div class="profile-img flex-shrink-0 me-3">
+          <img class="rounded-circle" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/andychen.jpeg?raw=true" alt="profile picture">
+        </div>
+        <!-- 姓名+信箱 -->
+        <div class="profile-body flex-grow-1">
+          <p class="profile-text m-0">Andy Chen<br>
+            <span class="text-secondary">andy0401@mail.com</span>
+          </p>          
+        </div>
+      </div>
+    </aside>
+    
+   
+      
 <div class="wrap">
   <!-- header -->
   <div class="header pt-7 pb-7">
@@ -321,3 +380,11 @@ current: index
         } );
 </script>
   
+
+   
+      
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
